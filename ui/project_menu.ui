@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Проект</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>331</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QTreeView" name="treeView"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="createAct"/>
+    <addaction name="copyFromAct"/>
+    <addaction name="separator"/>
+    <addaction name="saveProjectAct"/>
+    <addaction name="separator"/>
+    <addaction name="exitAct"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Вид</string>
+    </property>
+    <addaction name="informationProjectAct"/>
+    <addaction name="TasksViewAct"/>
+    <addaction name="fileTree"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Управление</string>
+    </property>
+    <addaction name="listOfTaskAct"/>
+    <addaction name="addTaskAct"/>
+    <addaction name="addSubtaskAct"/>
+    <addaction name="separator"/>
+    <addaction name="setDeadlineAct"/>
+    <addaction name="editDeadlineAct"/>
+    <addaction name="separator"/>
+    <addaction name="delProjectAct"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="createAct">
+   <property name="text">
+    <string>Создать</string>
+   </property>
+  </action>
+  <action name="copyFromAct">
+   <property name="text">
+    <string>Скопировать из</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="saveProjectAct">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="informationProjectAct">
+   <property name="text">
+    <string>Информация о проекте</string>
+   </property>
+  </action>
+  <action name="TasksViewAct">
+   <property name="text">
+    <string>Задачи</string>
+   </property>
+  </action>
+  <action name="fileTree">
+   <property name="text">
+    <string>Ветка файлов</string>
+   </property>
+  </action>
+  <action name="addTaskAct">
+   <property name="text">
+    <string>Добавить задачу</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>Удалить задачу</string>
+   </property>
+  </action>
+  <action name="addSubtaskAct">
+   <property name="text">
+    <string>Добавить подзадачу</string>
+   </property>
+  </action>
+  <action name="setDeadlineAct">
+   <property name="text">
+    <string>Установить дедлайн</string>
+   </property>
+  </action>
+  <action name="editDeadlineAct">
+   <property name="text">
+    <string>Изменить дедлайн</string>
+   </property>
+  </action>
+  <action name="delProjectAct">
+   <property name="text">
+    <string>Удалить проект</string>
+   </property>
+  </action>
+  <action name="exitAct">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="listOfTaskAct">
+   <property name="text">
+    <string>Список задач</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
